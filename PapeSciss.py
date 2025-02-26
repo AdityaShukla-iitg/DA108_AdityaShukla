@@ -35,7 +35,8 @@ def get_choice():
 def check_win(player , computer):                                                                          #def win function with 2 variable container
     print(f"You chose {player} , computer chose {computer}")                                               #printing the all options by user and comp
     
-    
+    if player == computer:
+        return "It is a tie , looks like we need one more try" 
     
     win_cond={"rock": "scissor" ,"paper":"rock", "scissor":"paper"}                                     #Using dictionary logic
     if win_cond[player]==computer:
@@ -49,8 +50,7 @@ def check_win(player , computer):                                               
     
     
     
-    # if player == computer:
-    #     return "It is a tie , looks like we need one more try"                                             #Using elif & if to predict winner
+                                                #Using elif & if to predict winner
     
     # elif player=="rock" and computer =="paper":
     #     return "This time winner is one and only smart computer"
